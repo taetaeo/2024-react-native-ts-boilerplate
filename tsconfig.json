@@ -1,3 +1,28 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "jsx": "react-native"
+  },
+  // 컴파일에서 포함할 디렉토리 및 확장자 설정
+  "include": ["*.ts", "*.tsx", "*.js", "*.jsx", "index.ts", "src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx", "src/**/*.d.ts"],
+  // 컴파일에서 제외할 디렉토리 및 파일을 설정
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
 }
